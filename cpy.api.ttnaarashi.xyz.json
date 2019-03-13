@@ -1,0 +1,33 @@
+// 酷Q 的Json文件支持以 // 开头的注释。
+// 打包前，应用的 .dll, .json 的文件名须以appid命名，应用AppInfo返回的内容须改为appid
+// 如 appid=com.example.demo, 则dll及json文件需分别命名为 com.example.demo.dll、com.example.demo.json
+{
+  "ret": 1, // 返回码，固定为1
+  "apiver": 9, // Api版本，本SDK为9
+  "name": "CpyWallPost", // 应用名称
+  "version": "1.0.0", // 应用版本
+  "version_id": 1, // 应用顺序版本（每次发布时至少+1）
+  "author": "SomioNaArashi", // 应用作者
+  "description": "CPY墙的发单服务器机器人~", //一句话描述插件用途
+  "event": [
+    // 事件列表，同一事件类型可重复定义（发布前请删除无用事件
+    {
+      "name": "加好友",
+      "function": "RequestAddFriend",
+      "type": 301,
+      "priority": 20000,
+      "id": 3
+    },
+    {
+      "name": "私聊",
+      "function": "PrivateMsg",
+      "type": 21,
+      "priority": 20000,
+      "id": 4
+    }
+  ],
+  "auth": [
+    106, //发送私聊消息		sendPrivateMsg
+    150 //置好友添加请求		setFriendAddRequest
+  ]
+}

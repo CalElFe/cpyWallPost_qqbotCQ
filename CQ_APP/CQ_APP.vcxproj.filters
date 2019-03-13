@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="appmain.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="dllmain.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Msg.cpp">
+      <Filter>示例代码</Filter>
+    </ClCompile>
+    <ClCompile Include="httpTool.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="cpp.hint" />
+    <None Include="..\README.md" />
+    <None Include="..\cpy.api.ttnaarashi.xyz.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{c11798bf-ce2b-4967-a937-52ab227d7388}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="示例代码">
+      <UniqueIdentifier>{dde818cf-9d44-43b8-8890-f718a4374e8b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{096f8573-c722-402e-9779-154ba4f2307a}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="appmain.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="httpTool.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
